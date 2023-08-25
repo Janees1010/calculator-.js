@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+         <h1>square root</h1>
+         <h2 id="first"></h2>
+         <h2 id="second"></h2>
+
+    </div>
+    <div>
+        <h1>miniutes</h1>
+        <h2 id="third"></h2>
+        <h2 id="four"></h2>
+
+   </div>
+   <div>
+    <h1>reverse</h1>
+    <h2 id="five"></h2>
+    <h2 id="six"></h2>
+
+</div>
+<div>
+    <h1>area of rectangle</h1>
+    <h2 id="seven"></h2>
+    <h2 id="eight"></h2>
+    <h2 id="nine"></h2>
+
+</div>
+
+
+
+
+
+
+
+
+    <script>
+        
+        let a = (prompt("enter a number and find the square root "))
+        
+        document.getElementById("first").innerHTML = "number u entered = " +a;
+        sqrt()
+        document.getElementById('second').innerHTML= "square root is "+sqr;
+        
+        
+        
+
+        function sqrt (){
+             sqr=a*a
+             return sqr;
+        }
+
+        let d = prompt(("enter miniutes and convert into seconds"))
+
+        document.getElementById("third").innerHTML = "you have entered "+d;
+        sec()
+        document.getElementById('four').innerHTML="the seconds in"+d+"miniutes="+time
+        
+
+        function sec() {
+            
+
+            time=d*60
+            return time;
+
+        }
+
+        let c = prompt(("enter a two digit value for reverse that value"));
+
+        document.getElementById("five").innerHTML=  "you have entered "+c;
+
+         reverse()
+        document.getElementById("six").innerHTML= "the reversed value ="+reverse();
+        
+        
+        function reverse (){
+
+             let z = c;
+             let output = ""
+            for(i=z.length-1;i>=0;i--){
+                output+=z[i];
+
+            }
+            return output;
+
+
+        }
+         console.log(reverse);
+
+
+
+         let l = prompt (("enter values and get area of rectangle rnter the length " )) 
+         document.getElementById('seven').innerHTML= "the length you entered is="+l;
+
+
+         let w = prompt ((" enter the width of the rectangle " )) 
+         document.getElementById('eight').innerHTML= "the width you entered is="+w;
+
+         area()
+         document.getElementById('nine').innerHTML="the area is"+result;
+
+
+         function area()  {
+
+            result=l*w;
+            return result;
+
+         }
+         
+          
+
+       
+        
+
+
+
+
+
+        
+    </script>
+</body>
+</html>

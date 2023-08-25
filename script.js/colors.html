@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #screen{
+            width:500px;
+            height:400px;
+            
+            
+        }
+        .click{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .position{
+            height:400px;
+            width:100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .parent{
+            display:flex;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: 600;
+            text-transform: capitalize;
+            
+            
+
+        }
+        
+      
+    </style>
+</head>
+<body>
+
+        <div class="parent">
+            <h1 id="text"></h1>
+        </div>
+    
+    <div class="position">
+        <div id="screen">
+   
+        </div>
+        
+    
+    </div>
+    
+<div class="click">
+     <div>
+            <button  onclick="colour('red')">red</button>
+          <button onclick="colour('green')">green</button>
+          <button onclick="colour('blue')">blue</button>
+          <button onclick="colour('black')">black</button>
+          <button onclick="colour('grey')">grey</button>
+          <button onclick="colour('violet')">violet</button>
+          <button onclick="colour('yellow')">yellow</button>
+          <button onclick="colour('orange')">orange</button>
+          <button onclick="colour('pink')">pink</button>
+          <button onclick="prank()">hsk</button>
+     </div>
+
+       <div class="parent">
+        
+       </div>
+    
+    </div>
+    
+
+    <script>
+        function colour(col)
+        {
+          document.getElementById("screen").style.background=col
+          document.getElementById("text").innerHTML=col
+          document.getElementById("text").style.color=col
+        }
+        function prank(){
+            alert("there is no such colour you are pranked")
+        }
+    </script>
+</body>
+
+ 
+</html>

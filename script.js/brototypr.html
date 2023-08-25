@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="show()">click me</button>
+    
+
+
+    <script>
+        function show(){
+            console.log("clicked")
+            let a=1;
+            let b =2;
+            var sum = a+b;
+            console.log("sum="+sum);
+
+            const y=10;
+
+            if(y%2!==0){
+                console.log("this is odd")
+            }else{
+                console.log("this is even");
+            }
+            for(i=1;i<=5;i++)
+            console.log(i);
+           let brr=["one","two","three", 1,2,3]
+           console.log(brr);
+           console.log(brr[0]);
+
+           let person= [{
+            name:"janees",
+            age:18,
+            place:"thrissur"
+
+           },
+           {
+            name:"rajesh",
+            age:52,
+            place:"cochin"
+           }
+        ]
+
+           console.log(person);
+
+           console.log(person[1].age);
+
+           let arr = ['a','a','b','c','d','e'];
+
+           console.log(arr);
+
+           /*arr.push('c','d')
+
+           console.log(arr)
+
+           arr.pop();
+           arr.pop();
+           console.log(arr);
+
+           arr.unshift(0,1);
+           console.log(arr);
+
+           arr.shift();
+           console.log(arr);
+           arr.splice(0,2);
+           console.log(arr);
+
+           arr.push("c",'d','e')
+           console.log(arr);
+
+           arr.splice(4,1,'0','1');
+           console.log(arr);*/
+             
+           let crr = arr.slice(1,6);
+           console.log(crr);
+
+           let x=arr.join("-");
+           console.log(x);
+
+           let yrr=[1,2,3,4,2,4,5,6];
+           let o = arr.concat(yrr);
+           //let z= yrr.indexOf(4);
+           //let m= yrr.lastIndexOf(2);
+        
+           //console.log(m);
+           console.log(o);
+           o.includes(3);
+           console.log(o.includes(3));
+
+           let d  = yrr.some(check);
+
+           function check(num){
+            return num <=10;
+           }
+           console.log(d);
+
+           let l = yrr.findIndex(age);
+
+           function age (num2){
+              return num2 == 6;
+           }
+
+         console.log(l);
+
+            let k = yrr.filter(mem);
+
+           function mem(num3) {
+           return num3 % 2==!0;
+        
+            }
+            console.log(k);
+
+            let xrr = [1,2,3,4,];
+
+
+            //var c = crr.fill("ramesh") ;
+
+             xrr.forEach((elem,index)=>{
+                let newcrr= elem*10;
+            
+                console.log(newcrr);
+
+
+             })
+
+             let m = "galiya" ;
+            // console.log(m.toUpperCase)
+            // console.log(m.includes("gali"));
+             //console.log(m.search("y"));
+            // console.log(m.replace("galiya","galiyaaa"));
+            // console.log(m.charAt(3));
+           //  console.log(m.charCodeAt(1));
+
+          // let v = fromcharcode(100)
+          // console.log(v);
+          let c= 'bheem'
+          let r = m.concat(c)
+         // console.log(m.concat(c));
+          console.log(r.repeat(2));
+          console.log(m.substring(1,4));
+          let g = '200 is the number'
+          console.log(parseInt(g));
+          console.log(parseFloat(g));
+          let p = Number.isInteger(g)
+          let io = Number.isFinite(g)
+          console.log(p);
+          console.log(io);
+          let kk = 33.4876;
+          console.log(kk.toFixed(3));
+          console.log(kk.toPrecision(5));
+          
+             
+         let z = Math.ceil(2.345)
+         console.log(z);
+         var e = Math.floor(2.43)
+        }
+            
+           
+
+        
+        
+
+    </script>
+</body>
+</html>

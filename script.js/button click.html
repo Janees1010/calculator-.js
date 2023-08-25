@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img{
+            height:200px;
+            width:500px;
+        }
+    </style>
+</head>
+<body id="b1">
+    <input type="text" id="imp">
+    <button onclick="work()">Click me</button>
+    <h2 id="display"></h2>
+    <div onclick="col()" id="img">
+        <p>hi</p>
+
+    </div>
+    
+
+    <script>
+        function work(){
+            var text = document.getElementById("imp").value
+            document.getElementById("display").innerHTML=text
+            document.getElementById("b1").style.background="red";
+            if(text=="janees"){
+            alert("mission completed")
+            }
+           
+        }
+       
+
+    </script>
+</body>
+</html>
